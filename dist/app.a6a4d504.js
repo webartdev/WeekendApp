@@ -24647,6 +24647,45 @@ require("normalize.css/normalize.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Person =
+/*#__PURE__*/
+function () {
+  function Person() {
+    var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "Anonymous";
+    var age = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
+    _classCallCheck(this, Person);
+
+    this.name = name;
+    this.age = age;
+  }
+
+  _createClass(Person, [{
+    key: "getGreeting",
+    value: function getGreeting() {
+      return "Hi. I am ".concat(this.name, "!");
+    }
+  }, {
+    key: "getDescription",
+    value: function getDescription() {
+      return "".concat(this.name, " is ").concat(this.age, " years old");
+    }
+  }]);
+
+  return Person;
+}();
+
+var me = new Person('Elena', 26);
+var other = new Person();
+console.log(other.getDescription());
+console.log(me.getDescription());
+
 _reactDom.default.render(_react.default.createElement(_IndecisionApp.default, null), document.getElementById('app'));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./components/IndecisionApp":"src/components/IndecisionApp.js","./styles/styles.scss":"src/styles/styles.scss","normalize.css/normalize.css":"node_modules/normalize.css/normalize.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -24675,7 +24714,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64054" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50780" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

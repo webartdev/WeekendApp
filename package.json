@@ -7,7 +7,7 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html --out-dir prod"
   },
-  "keywords": [],
+  "keywords": ["Weekend Plans"],
   "author": "Elena Pearson",
   "license": "ISC",
   "dependencies": {
