@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --out-dir prod"
+    "build": "parcel build index.html --out-dir prod",
+    "heroku-postbuild": "npm run build:prod",
+    "start": "node server/server.js"
   },
   "keywords": [
     "Weekend Plans"
@@ -33,6 +35,6 @@
     "babel-preset-react": "^6.24.1"
   },
   "engines": {
-    "node": "8.11.4"
+    "node": "11.1.0"
   }
 }
