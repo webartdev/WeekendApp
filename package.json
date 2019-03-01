@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server.js",
     "dev": "parcel index.html",
-    "build": "parcel build index.html --out-dir prod"
+    "build": "parcel build index.html --out-dir prod",
+    "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [
     "Weekend Plans"
