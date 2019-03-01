@@ -7,7 +7,9 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html --out-dir prod"
   },
-  "keywords": ["Weekend Plans"],
+  "keywords": [
+    "Weekend Plans"
+  ],
   "author": "Elena Pearson",
   "license": "ISC",
   "dependencies": {
@@ -29,5 +31,14 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1"
-  }
+  },
+  "engines": {
+    "node": "11.1.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
